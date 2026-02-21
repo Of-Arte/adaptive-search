@@ -10,11 +10,6 @@ A study project focused on efficient data structure manipulation and algorithm a
 - **Integrated Debug Suite**: Toggle trace logs to visualize pointer movement and performance timing.
 - **Automated Testing**: Built-in test cases for verifying edge cases like empty arrays, single elements, and extreme values.
 
-## 🛠️ Technical Stack
-
-- **Language**: Python 3.x
-- **Core Modules**: `time` (benchmarking), `ast` (safe literal evaluation for tests), `sys` (process control).
-
 ## 🚀 Getting Started
 
 1. **Clone/Download** the repository.
