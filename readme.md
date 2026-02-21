@@ -5,7 +5,7 @@ A study project focused on efficient data structure manipulation and algorithm a
 ## ✨ Features
 
 - **Dynamic Array Construction**: Build initial datasets of up to 10,000,000 elements.
-- **Adaptive Insertion Algorithm**: Optimized linear scan to find the correct insertion point for new elements ($O(n)$ complexity).
+- **Adaptive Insertion Algorithm**: Automatically selects **linear search** ($O(n)$) for arrays under 100 elements or **binary search** ($O(\log n)$) for larger ones, then inserts at the correct position.
 - **Dual Perspective Display**: View data in both ascending (standard) and descending (reversed) order.
 - **Integrated Debug Suite**: Toggle trace logs to visualize pointer movement and performance timing.
 - **Automated Testing**: Built-in test cases for verifying edge cases like empty arrays, single elements, and extreme values.
@@ -55,12 +55,12 @@ graph TD
 
 ### Algorithm Complexity (Big O)
 
-| Operation | Complexity | Description |
+| Operation | Complexity | Notes |
 | :--- | :--- | :--- |
 | **Get Sum** | $O(n)$ | Iterative summation of all elements. |
-| **Search Position** | $O(n)$ | Linear scan to find `key < value`. |
+| **Search (linear)** | $O(n)$ | Used when array size < `SEARCH_THRESHOLD` (100). |
+| **Search (binary)** | $O(\log n)$ | Used when array size ≥ `SEARCH_THRESHOLD` (100). |
 | **Insertion** | $O(n)$ | Shifting elements in a Python list. |
-| **Total Insertion** | $O(n)$ | More efficient than $O(n \log n)$ for single additions. |
 | **Reversing** | $O(n)$ | Creating a reversed slice of the list. |
 
 ## 🧪 Development History
@@ -68,4 +68,5 @@ This project evolved through four phases of study:
 1. **Foundation**: Implementing basic array building and position finding.
 2. **Structural Design**: Moving from linear scripts to a robust dispatch-style menu system.
 3. **Optimization & Testing**: Adding performance timing and automated case verification.
-4. **Statistical Enhancements**: Added O(1) summation and improved test coverage.
+4. **Statistical Enhancements**: Added summation and improved test coverage.
+5. **Algorithm Selection**: Added `binary_search` and a `search_data` dispatcher that auto-selects linear or binary search based on array size.
