@@ -1,6 +1,6 @@
 # Array Search & Adaptive Insertion
 
-A study project focused on efficient data structure manipulation and algorithm analysis. This program maintains a sorted dataset and allows for "adaptive" insertion, ensuring the array remains sorted without needing a full re-sort.
+A study project focused on efficient data structure manipulation and algorithm analysis. This program maintains a sorted dataset and allows for "adaptive" insertion, ensuring the array remains sorted without needing a full sort.
 
 ## ✨ Features
 
@@ -31,11 +31,3 @@ A study project focused on efficient data structure manipulation and algorithm a
 | **Get Sum** | $O(n)$ | Iterative summation of all elements. |
 | **Search (linear)** | $O(n)$ | Used when array size < `SEARCH_THRESHOLD` (100). |
 | **Search (binary)** | $O(\log n)$ | Used when array size ≥ `SEARCH_THRESHOLD` (100). |
-
-## 🧪 Development History
-This project evolved through four phases of study:
-1. **Foundation**: Implementing basic array building and position finding.
-2. **Structural Design**: Moving from linear scripts to a robust dispatch-style menu system.
-3. **Optimization & Testing**: Adding performance timing and automated case verification.
-4. **Statistical Enhancements**: Added summation and improved test coverage.
-5. **Algorithm Selection**: Added `binary_search` and a `search_data` dispatcher that auto-selects linear or binary search based on array size.
